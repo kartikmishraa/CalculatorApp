@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>JS-Calc</title>
+  </head>
+  <body>
+    <header>
+      <img src="../res/logo.png" id="logo-el" />
+      <h1 id="title-el"></h1>
+    </header>
+
+    <nav id="brief-el">
+      <em id="text-el"></em>
+    </nav>
+
+    <main>
+      <div id="calc-window">
+        <div id="display-div">
+          <p id="display-window"></p>
+        </div>
+
+        <button
+          id="seven-btn"
+          class="calc-btn calc-num"
+          onclick="buttonPressed(7)"
+        >
+          7
+        </button>
+        <button
+          id="eight-btn"
+          class="calc-btn calc-num"
+          onclick="buttonPressed(8)"
+        >
+          8
+        </button>
+        <button
+          id="nine-btn"
+          class="calc-btn calc-num"
+          onclick="buttonPressed(9)"
+        >
+          9
+        </button>
+        <button
+          id="prod-btn"
+          class="calc-btn calc-op"
+          onclick="buttonPressed('*')"
+        >
+          x
+        </button>
+        <br />
+        <button
+          id="four-btn"
+          class="calc-btn calc-num"
+          onclick="buttonPressed(4)"
+        >
+          4
+        </button>
+        <button
+          id="five-btn"
+          class="calc-btn calc-num"
+          onclick="buttonPressed(5)"
+        >
+          5
+        </button>
+        <button
+          id="six-btn"
+          class="calc-btn calc-num"
+          onclick="buttonPressed(6)"
+        >
+          6
+        </button>
+        <button
+          id="add-btn"
+          class="calc-btn calc-op"
+          onclick="buttonPressed('+')"
+        >
+          +
+        </button>
+        <br />
+        <button
+          id="one-btn"
+          class="calc-btn calc-num"
+          onclick="buttonPressed(1)"
+        >
+          1
+        </button>
+        <button
+          id="two-btn"
+          class="calc-btn calc-num"
+          onclick="buttonPressed(2)"
+        >
+          2
+        </button>
+        <button
+          id="three-btn"
+          class="calc-btn calc-num"
+          onclick="buttonPressed(3)"
+        >
+          3
+        </button>
+        <button
+          id="sub-btn"
+          class="calc-btn calc-op"
+          onclick="buttonPressed('-')"
+        >
+          -
+        </button>
+        <br />
+        <button
+          id="zero-btn"
+          class="calc-btn calc-num"
+          onclick="buttonPressed(0)"
+        >
+          0
+        </button>
+        <button
+          id="point-btn"
+          class="calc-btn calc-num"
+          onclick="buttonPressed('.')"
+        >
+          .
+        </button>
+        <button
+          id="equal-btn"
+          class="calc-btn calc-res"
+          onclick="buttonPressed('=')"
+        >
+          =
+        </button>
+        <button
+          id="quo-btn"
+          class="calc-btn calc-op"
+          onclick="buttonPressed('/')"
+        >
+          /
+        </button>
+        <br />
+        <button
+          id="clear-btn"
+          class="calc-btn calc-res"
+          onclick="buttonPressed('clear')"
+        >
+          clear
+        </button>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
