@@ -4,8 +4,9 @@ let textEl = document.getElementById("text-el");
 
 let title = "Calculator App";
 let result = "";
-let text =
-  "Hi there, Kartik here. I am learning JavaScript <br> and I have built this simple JS powered calculator!";
+let text = `
+Hi there, Kartik here. I am learning JavaScript <br> and I have built this simple JS powered calculator!
+`;
 
 titleEl.textContent = title;
 textEl.innerHTML = text;
@@ -23,6 +24,8 @@ function buttonPressed(x) {
     displayEl.textContent += " " + x + " ";
   } else {
     result = eval(displayEl.textContent);
-    displayEl.textContent += " = " + result;
+    displayEl.value = "";
+    //displayEl.textContent += " = " + result;
+    displayEl.textContent = result;
   }
 }
